@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HorizonZz | About </title>
+        <link rel=stylesheet href=style.css>
+        <link rel="shortcut icon" src=images/horizonzzIcon.png>
+        <script src=https://code.jquery.com/jquery-3.6.0.js></script>
+        <script src=functions.js></script>
+        <script>
+            $(document).ready(() => 
+            {       
+                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini|Nexus|Nokia/i.test(navigator.userAgent) ) 
+                {
+                    changeForMobile('about');
+                }
+                if( /iPad|Kindle|Silk|PlayBook|Nexus/i.test(navigator.userAgent) )
+                {
+                    changeForIpad();
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <ul id=navbarUL>
+                <li style=float:left;color:black;> -- </li>
+                <li class=navbarLI><img id=navLogo src=images/horizonzzlogo.png></li>
+                <li class=navbarLI><a id=navbutton href=home.html> Home </a></li>
+                <li class=navbarLI><a id=navbutton href=portfolio.html> Portfolio </a></li>
+                <li class="navbarLI active"><a id=navbutton href=about.html> About </a></li>
+            </ul>
+        </div>
+        <div id=webBody3>
+            <h1> About Me </h1>
+        </div>
+        <div id=webBody4>
+            <div id=abtMe>
+                <p id=abtText> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My real name is David O'Regan, and I am currently a senior in high school. I was first introduced to programming during the summer before freshman year, at an <a id=link href=https://www.idtech.com/ target=_blank rel="noopener noreferrer">iD Tech</a> + <a id=link href=https://vt.edu/ target=_blank rel="noopener noreferrer">VA Tech</a> Java camp. Java camp. During that camp, I discovered a new passion for game and software development. My growing passion for programming led me to take AP & IB Computer Science through high school, as well as extra courses with <a id=link href=https://www.mit.edu/ target=_blank rel="noopener noreferrer">MIT</a> and iD Tech. On 2 June 2022, I earned the NOCTI Knowledge-Based Workforce Competency Credential for passing the NOCTI Computer Programming industry-based certification. The projects that I have created can be found in the <a id=link href=portfolio.html target=_blank rel="noopener noreferrer">Portfolio</a> tab. </p>
+                <p id=abtText2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In 2019 and 2020, I was a member of the George Mason Game Programming Club, and it was there that I learned about Unity and the work that goes into the process of game development. In 2021, I joined <a id=link href=https://1418.team/ target=_blank rel="noopener noreferrer">FRC Team 1418</a> as a lead programmer. During the recent season (2022) of the <a id=link href=https://www.firstinspires.org/robotics/frc target=_blank rel="noopener noreferrer"><i>FIRST</i> Robotics Competition</a>, I was in charge of creating the Driver Dashboard (software that makes driving the robot easier) and helped with the autonomous robot code.</p>
+            </div>
+            <div id=gap3></div>
+            <div id=abtImgCont style=display:block;>
+                <img id=abtImg src=images/david.png>
+                <img id=abtImg2 src=images/noctiSkillBadge.png>
+                <img id=abtImg2 src=images/1418fist.png>
+            </div>
+        </div>
+        <div id=abtCont>
+            <h3> Contact me via e-mail at <a id=link href=mailto:horizonzzQuery@gmail.com>horizonzzQuery@gmail.com </h3>
+        </div>
+        <div id=gap2></div>
+        <footer id=footer>
+            <ul id=footerUL name=branding>
+                <li id=footerLIT><img src=images/horizonzzlogo.png height=55px></li>
+                <li id=footerLIT><a> Copyright © 2022 HorizonZz </a></li>
+                <li id=footerLIT><a> - All Rights Reserved. </a></li>
+            </ul>
+            <ul id=footerUL name=links>
+                <li id=footerLI style=margin:13px><a href=https://www.youtube.com/channel/UCw_PLaNwCyhW5znu2y6SgVw target=_blank rel="noopener noreferrer"><img src=images/youtubeIcon.png height=35px></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=https://horizonzz.itch.io target=_blank rel="noopener noreferrer"><img src=images/itchLogo.png height=35px></a></li>
+                <li id=footerLI><a href=https://www.twitch.tv/horizonzztv target=_blank rel="noopener noreferrer"><img src=images/twitchLogo.png height=35px></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=https://github.com/Git-HorizonZz target=_blank rel="noopener noreferrer"><img src=images/gitLogo.png height=35px></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
