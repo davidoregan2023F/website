@@ -273,6 +273,13 @@ h1 {
     justify-content: center;
 }
 
+#midsec2 {
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
 #midsecUL {
     list-style-type: none;
     text-align: center;

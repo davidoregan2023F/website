@@ -5,8 +5,10 @@ function changeForMobile(page)
         $('#slide').empty();
         $('#slide').append('<img onload=homeLoad(); id=homeGIF src=images/horizonzzMB.gif width=100%>')
         $('#midsec').empty();
+        $('#midsec2').empty();
         $('#midsec').append('<ul id=midsecUL><li id=midsecLIT style=font-size:xx-large;><h3><b>Recent Release:</b><h3></li><li id=midsecLIG style=margin:0;padding:0;><h2 id=pengu><b>PENGU</b></h2></li><li id=midsecLI>Genre: 2D Platformer</li><li id=midsecLI>Released: 26 June 2022</li></ul>');
-        $('#webBody2').append('<div id=gap></div><div id=midsec><ul id=midsecUL><li id=midsecLIT><iframe id=fram frameborder="0" src="https://itch.io/embed/1584971?border_width=0&amp;bg_color=222&amp;fg_color=ffffff&amp;link_color=d70808&amp;border_color=fff" width=550 height=165><a href=https://horizonzz.itch.io/pengu>Pengu by HorizonZz</a></iframe></li></ul></div><div id=gap4></div>');
+        $('#webBody2').append('<div id=gap></div><div class=midsec><ul id=midsecUL><li id=midsecLIT><iframe id=fram frameborder="0" src="https://itch.io/embed/1584971?border_width=0&amp;bg_color=222&amp;fg_color=ffffff&amp;link_color=d70808&amp;border_color=fff" width=550 height=165><a href=https://horizonzz.itch.io/pengu>Pengu by HorizonZz</a></iframe></li></ul></div><div id=gap4></div>');
+        $('#webBody2').append('<div><ul id=midsecUL><li id=midsecLIT style=font-size:larger;><h4><b>Recent Website Release:</b></h4></li><li id=midsecLIG style=margin:0;padding:0;><h2><b>BookSafe</b></h2></li><li id=midsecLI><a id=link href=https://git-horizonzz.github.io/booksafe/ >git-horizonzz.github.io/booksafe</a></li><li id=midsecLI>Type: Tool</li><li id=midsecLI>Released: 13 July 2022</li></ul><ul id=midsecUL><li id=midsecLIT><img width=300px height=300px src=images/lockicon.png height=200px></li></ul></div>')
     }
     if (page == 'portfolio') 
     {
