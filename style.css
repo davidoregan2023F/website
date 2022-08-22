@@ -280,6 +280,22 @@ h1 {
     justify-content: center;
 }
 
+#midsec3 {
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bi.bi-list-ul {
+    margin-top: 0.5em;
+}
+
+.bi.bi-columns-gap {
+    margin-top: 0.5em;
+    margin-bottom: 0.1em;
+}
+
 #midsecUL {
     list-style-type: none;
     text-align: center;

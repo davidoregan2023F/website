@@ -37,3 +37,13 @@ function changeForIpad()
     $('#webBody3').empty();
     $('#webBody3').append('<div id=abtMe style=width:70%><img id=abtImg style=margin-top:15px;margin-bottom:10px; src=images/david.png><h1> About Me </h1><p>'+abtText+'</p><p>'+abtText2+'</p><img id=abtImg2 src=images/noctiSkillBadge.png></div>');
 }
+
+$.fn.mySllideToggleOff = (show) =>
+{
+    if(show){
+       $(this).slideDown();
+    }
+    else{
+       $(this).slideUp();
+    }
+}

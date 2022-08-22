@@ -33,11 +33,24 @@
         <div id=webBody5>
             <h1> Portfolio </h1>
             <div id=dspBtnCont>
-                <button id=dbA onclick="$('.portoBox').hide();$('.portoList').show();$('#dbB').removeClass('dspBtn active').addClass('dspBtn');$('#dbA').removeClass('dspBtn').addClass('dspBtn active');"> ⋮≡ </button><button id=dbB onclick="$('.portoList').hide();$('.portoBox').show();$('#dbA').removeClass('dspBtn active').addClass('dspBtn');$('#dbB').removeClass('dspBtn').addClass('dspBtn active');"> ⊞ </button>
+                <button id=dbA onclick="$('.portoBox').hide();$('.portoList').fadeIn();$('#dbB').removeClass('dspBtn active').addClass('dspBtn');$('#dbA').removeClass('dspBtn').addClass('dspBtn active');"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  </svg> </button><button id=dbB onclick="$('.portoList').hide();$('.portoBox').fadeIn();$('#dbA').removeClass('dspBtn active').addClass('dspBtn');$('#dbB').removeClass('dspBtn').addClass('dspBtn active');"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+                    <path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+                  </svg> </button>
             </div>
             <p id=direct> Click on collapsed descriptions to expand them, and again to collapse them. </p>
         </div>
         <div id=webBody class=portoList>
+            <div id=liDiv>
+                <div><div style=border-style:solid;border-color:black><img id=projIMG alt="lock" src=images/hc_icon.png height=350px></div></div>
+                <div id=liDivText>
+                    <h4 class=projectTitle> HorizonZz's Classics </h4>
+                    <p class=portDesc onclick="if($(this).attr('class') == 'portDesc'){ $(this).removeClass('portDesc').addClass('exP'); }else if($(this).attr('class') == 'exP'){ $(this).removeClass('exP').addClass('portDesc'); }"> <i>HorizonZz's Classics</i> is a repository site for all the retro-style games that I have created. </p>
+                    <p id=lanDesc> Languages: HTML, JavaScript, CSS </p>
+                    <p id=pubDesc> Published: Coming soon... </p>
+                </div>
+            </div>
             <div id=liDiv>
                 <div><div style=border-style:solid;border-color:black><img id=projIMG alt="lock" src=images/lockicon.png height=350px></div></div>
                 <div id=liDivText>
@@ -170,6 +183,13 @@
             </div>
         </div>
         <div id=webBody class=portoBox>
+            <div id=wbDiv>
+                <div><img id=projIMG alt="lock" src=images/hc_icon.png height=270px></div>
+                <h4 class=projectTitle> HorizonZz's Classics </h4>
+                <p class=portDesc onclick="if($(this).attr('class') == 'portDesc'){ $(this).removeClass('portDesc').addClass('exP'); }else if($(this).attr('class') == 'exP'){ $(this).removeClass('exP').addClass('portDesc'); }"> <i>HorizonZz's Classics</i> is a repository site for all the retro-style games that I have created. </p>
+                <p id=lanDesc> Languages: HTML, JavaScript, CSS </p>
+                <p id=pubDesc> Published: Coming soon... </p>
+            </div>
             <div id=wbDiv>
                 <div><img id=projIMG alt="lock" src=images/lockicon.png height=270px></div>
                 <h4 class=projectTitle> BookSafe </h4>
