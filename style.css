@@ -26,6 +26,16 @@ body {
     color: white;
 }
 
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#content {
+    width: 70vw;
+    height: 100vh;
+}
+
 #sidebar {
     display: flex;
     flex-direction: column;
