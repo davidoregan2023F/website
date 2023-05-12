@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HorizonZz | Home </title>
+        <link rel=stylesheet href=/style.css>
+        <link rel="shortcut icon" type="image/x-icon" href=/horizonzzIcon.ico>
+        <link rel="apple-touch-icon" type="image/x-icon" href=/horizonzzIcon.ico>
+        <script src=https://code.jquery.com/jquery-3.6.0.js></script>
+        <script src=functions.js></script>
+        <script>
+            $(document).ready(() => 
+            {
+                if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini|Nexus|Nokia/i.test(navigator.userAgent) ) 
+                {
+                    changeForMobile('home');
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <ul id=navbarUL>
+                <li style=float:left;color:black;> -- </li>
+                <li class=navbarLI><img id=navLogo src=images/horizonzzlogo.png alt=horizonzz></li>
+                <li class="navbarLI active"><a id=navbutton href=index.html> Home </a></li>
+                <li class=navbarLI><a id=navbutton href=portfolio.html> Portfolio </a></li>
+                <li class=navbarLI><a id=navbutton href=about.html> About </a></li>
+            </ul>
+        </div>
+        <div id=webBody2>
+            <div id=slide>
+                <img onload=homeLoad(); id=homeGIF src=images/horizonzzDT.gif alt=horizonzz_welcome width=100%>
+            </div>
+            <div id=midsec3>
+                <ul id=midsecUL>
+                    <li id=midsecLIT style=font-size:larger;><h4><b>Upcoming:</b></h4></li>
+                    <li id=midsecLIG style=margin:0;padding:0;><h2><b>HorizonZz's</b></h2></li>
+                    <li id=midsecLIG style=margin:0;padding:0;margin-top:-0.9em><h2><b>Classics</b></h2></li>
+                    <li id=midsecLI>Type: Website</li>
+                </ul>
+                <ul id=midsecUL>
+                    <li id=midsecLIT>
+                        <div id=upc_div style=display:flex;>
+                            <img id=upc_img src=images/hc_icon.png height=200px>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id=midsec>
+                <ul id=midsecUL>
+                    <li id=midsecLIT style=font-size:larger;><h4><b>Recent Game Release:</b></h4></li>
+                    <li id=midsecLIG style=margin:0;padding:0;><h2><b>PENGU</b></h2></li>
+                    <li id=midsecLI>Genre: 2D Platformer</li>
+                    <li id=midsecLI>Released: 26 June 2022</li>
+                </ul>
+                <ul id=midsecUL>
+                    <li id=midsecLIT>
+                        <iframe frameborder="0" src="https://itch.io/embed/1584971?border_width=0&amp;bg_color=222&amp;link_color=f10d0d&amp;border_color=222" width="206" height="165"><a href="https://horizonzz.itch.io/pengu">Pengu by HorizonZz</a></iframe>
+                    </li>
+                </ul>
+            </div>
+            <div id=midsec2>
+                <ul id=midsecUL>
+                    <li id=midsecLIT style=font-size:larger;><h4><b>Recent Website Release:</b></h4></li>
+                    <li id=midsecLIG style=margin:0;padding:0;><h2><b>BookSafe</b></h2></li>
+                    <li id=midsecLI>Type: Tool</li>
+                    <li id=midsecLI>Released: 13 July 2022</li>
+                    <li id=midsecLI><a id=link href=https://booksafe.horizonzz.com target=_blank rel="noopener noreferrer">booksafe.horizonzz.com</a></li>
+                </ul>
+                <ul id=midsecUL>
+                    <li id=midsecLIT>
+                        <div style=display:flex;>
+                            <img src=images/lockicon.png height=200px>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer id=footer>
+            <ul id=footerUL name=branding>
+                <li id=footerLIT><img src=images/horizonzzlogo.png alt=horizonzz height=55px></li>
+                <li id=footerLIT><a> Copyright © 2022 HorizonZz </a></li>
+                <li id=footerLIT><a> - All Rights Reserved. </a></li>
+            </ul>
+            <ul id=footerUL name=links>
+                <li id=footerLI style=margin:13px><a href=https://www.youtube.com/channel/UCw_PLaNwCyhW5znu2y6SgVw target=_blank rel="noopener noreferrer"><img src=images/youtubeIcon.png alt=youtube_logo height=33px></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=https://horizonzz.itch.io target=_blank rel="noopener noreferrer"><img src=images/itchLogo.png alt=itchio_logo height=35px></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=https://steamcommunity.com/id/horizonzz/ target=_blank rel="noopener noreferrer"><img src=images/steamicon.png alt=steam_logo height=37px></a></li>
+                <li id=footerLI>&nbsp;<a href=https://www.twitch.tv/horizonzztv target=_blank rel="noopener noreferrer"><img src=images/twitchLogo.png alt=twitch_logo height=35px></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=https://github.com/Git-HorizonZz target=_blank rel="noopener noreferrer"><img src=images/gitLogo.png alt=github_logo height=35px></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

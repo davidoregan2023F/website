@@ -1,0 +1,640 @@
+@font-face {
+    font-family: 'Helv';
+    src: URL('fonts/Helvetica.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AdamWoff';
+    src: url('fonts/adam.woff2');
+}
+
+@font-face {
+    font-family: 'RobotoL';
+    src: url('fonts/roboto-light.woff2');
+}
+
+@font-face {
+    font-family: 'Silk';
+    src: URL('fonts/slkscr.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 34, 34);
+    font-family: RobotoL;
+}
+
+#navbarUL {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbarLI {
+    float: left;
+}
+
+.navbarLI.active {
+    background-color: rgb(28, 28, 28);
+}
+
+.navbarLI a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: large;
+    padding: 20px 22px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+#navbutton:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+#navLogo {
+    height: 58px;
+}
+
+#footer {
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#footerUL {
+    list-style-type: none;
+    text-align: center;
+}
+
+#footerLIT {
+    font-size: large;
+    color: white;
+}
+
+#footerLI {
+    font-size: large;
+    color: white;
+}
+
+#footerLI a {
+    text-decoration: none;
+    font-size: medium;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+#footerLI a:hover {
+    color: goldenrod;
+}
+
+#webBody5 {
+    margin-top: 71px;
+    text-align: center;
+}
+
+#webBody {
+    text-align: center;
+}
+
+#webBody2 {
+    margin-top: 58px;
+    text-align: center;
+}
+
+#homeGIF {
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#wbDiv {
+    width: 26%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    text-align: center;
+}
+
+#wbDiv div img {
+    max-width: 100%;
+}
+
+#wbDiv2 {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    text-align: center;
+}
+
+#wbDiv2 div img {
+    max-width: 100%;
+}
+
+.projectTitle {
+    color: white;
+    background-color: black;
+    font-size: 28px;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: AdamWoff;
+    color: white;
+    font-size: 500%;
+    margin: 0;
+}
+
+#lanDesc {
+    color: white;
+    font-size: larger;
+    margin: 15px 30px;
+    line-height: 1.5;
+}
+
+#pubDesc {
+    color: white;
+    font-size: larger;
+    margin: 15px 30px;
+    line-height: 1.5;
+}
+
+.portDesc {
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    margin: 15px 30px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.exP {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    margin: 15px 30px;
+    line-height: 1.5;
+    overflow: none;
+}
+
+#portfolioLink {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    padding: 10px 16px;
+    background-color: black;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+#portfolioLink:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+#gap {
+    height: 20px;
+}
+
+#gap2 {
+    height: 15px;
+}
+
+#gap3 {
+    height: 1px;
+    width:3%;
+    float:left;
+}
+
+#gap4 {
+    height: 50px;
+}
+
+#portOther {
+    color: white;
+    font-size: larger;
+    width: 50%;
+    text-align: center;
+}
+
+#link {
+    text-decoration: underline;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+#link:hover {
+    color: goldenrod;
+}
+
+#splitHolder {
+    margin: 20px;
+}
+
+#split {
+    width: 55%;
+    color: grey;
+    background-color: grey;
+    height: 1px;
+}
+
+#projIMG {
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#midsec {
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#midsec2 {
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#midsec3 {
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bi.bi-list-ul {
+    margin-top: 0.5em;
+}
+
+.bi.bi-columns-gap {
+    margin-top: 0.5em;
+    margin-bottom: 0.1em;
+}
+
+#midsecUL {
+    list-style-type: none;
+    text-align: center;
+}
+
+#midsecLIT {
+    font-size: large;
+    color: white;
+}
+
+#midsecLIG {
+    font-family: Silk;
+    font-size: large;
+    color: white;
+}
+
+#midsecLI {
+    font-size: large;
+    color: white;
+}
+
+#robotics {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#webBody3 {
+    margin-top: 71px;
+    display: flex;
+    justify-content: center;
+}
+
+#abtImgCont {
+    width: 25%;
+    float: left;
+    display: block;
+    margin-top: 30px;
+}
+
+#abtMe {
+    width: 31%;
+    float: left;
+}
+
+#abtMe h1 {
+    text-align: center;
+}
+
+#abtMe p {
+    margin: 20px;
+    color: white;
+    font-size: x-large;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+#abtCont {
+    margin: 30px;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+}
+
+#abtImg {
+    display:block;
+    margin: auto;
+    width: 100%;
+    max-width: 390px;
+    max-height: 390px;
+    margin-top: 0;
+    border: white;
+    border-style: solid;
+}
+
+#abtImg2 {
+    display:block;
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 10px;
+}
+
+#webBody4 {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+#dspBtnCont {
+    text-align: center;
+    margin: 10px;
+}
+
+.dspBtn {
+    background-color: black;
+    font-size: large;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    transition-duration: 0.4s;
+}
+
+.dspBtn.active {
+    background-color: rgb(46, 46, 46);
+}
+
+#dspBtnCont button:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+#liDiv {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#liDivText {
+    width: 35%;
+}
+
+#liDiv div div img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#direct {
+    font-size: larger;
+    color: white;
+}
+
+@media only screen and (max-device-width: 650px) {
+    #navbarUL {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbarLI a {
+        display: block;
+        color: white;
+        text-align: center;
+        font-weight: normal;
+        font-size: 36px;
+        padding: 33px 35px;
+        text-decoration: none;
+        transition-duration: 0.4s;
+    }
+
+    #navLogo {
+        height: 106px;
+    }
+
+    #webBody5 {
+        margin-top: 117px;
+        text-align: center;
+    }
+
+    #webBody {
+        text-align: center;
+    }
+    
+    #webBody2 {
+        margin-top: 106px;
+        text-align: center;
+    }
+
+    #wbDiv {
+        width: 38%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .projectTitle {
+        color: white;
+        background-color: black;
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    #portfolioLink {
+        text-decoration: none;
+        font-size: larger;
+        color: white;
+        padding: 10px 16px;
+        background-color: black;
+        transition-duration: 0.4s;
+    }
+
+    .exP {
+        font-weight: normal;
+        color: white;
+        font-size: x-large;
+        margin: 15px 30px;
+    }
+
+    #lanDesc {
+        color: white;
+        font-size: x-large;
+        margin: 15px 30px;
+    }
+
+    #pubDesc {
+        color: white;
+        font-size: x-large;
+        margin: 15px 30px;
+    }
+
+    #wbDiv2 {
+        width: 60%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #midsecLIT {
+        font-size: xx-large;
+        color: white;
+    }
+    
+    #midsecLIG {
+        font-family: Silk;
+        font-size: xx-large;
+        color: white;
+    }
+    
+    #midsecLI {
+        font-size: xx-large;
+        color: white;
+    }
+
+    #fram {
+        -ms-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+
+    #footer {
+        display:flex;
+        align-items:center;
+    }
+
+    #pengu {
+        font-size: 70px;
+    }
+
+    #portfolioLink {
+        text-decoration: none;
+        font-size: x-large;
+        color: white;
+        padding: 14px 20px;
+        background-color: black;
+        transition-duration: 0.4s;
+    }
+
+    #webBody5 {
+        margin-top: 130px;
+    }
+
+    #webBody3 {
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #webBody4 {
+        display: flex;
+        justify-content: center;
+        margin-top: -15px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin: 15px;
+    }
+    
+    #abtMe {
+        width: 70%;
+        float: left;
+    }
+    
+    #abtMe h1 {
+        text-align: center;
+    }
+    
+    #abtMe p {
+        margin: 20px;
+        color: white;
+        font-size: xx-large;
+        display: inline-block;
+        line-height: 1.5;
+    }
+    
+    #abtCont {
+        color: white;
+        text-align: center;
+        font-size: x-large;
+    }
+    
+    #abtImg {
+        display:block;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right:auto;
+        margin-left:auto;
+        height: 100%;
+        max-width: 600px;
+        max-height: 600px;
+    }
+
+    #liDiv div div img {
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    #liDivText {
+        width: 45%;
+    }
+
+    #dspBtnCont button {
+        background-color: black;
+        font-size: xx-large;
+        border: none;
+        color: white;
+        padding: 20px 25px;
+        transition-duration: 0.4s;
+    }
+}
