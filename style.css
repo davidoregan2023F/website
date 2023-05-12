@@ -42,18 +42,28 @@ body {
     max-width: 85%;
 }
 
-#footerUL {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-}
-
-#footerLI {
-    font-size: large;
+.pagelinks {
+    font-size: larger;
     color: white;
+    text-decoration: none;
 }
 
-#footerLI a {
+.pagelinks:hover {
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.pagelinks.selectedpage {
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+#sociallinks {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#sociallinks a {
     text-decoration: none;
     font-size: medium;
     color: white;
