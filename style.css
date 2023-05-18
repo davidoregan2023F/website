@@ -18,6 +18,11 @@
     src: URL('fonts/slkscr.ttf') format('truetype');
 }
 
+#pengucoverimg {
+    -webkit-filter: drop-shadow(2px 1px 0 white) drop-shadow(-1px -1px 0 white);
+    filter: drop-shadow(2px 1px 0 white) drop-shadow(-1px -1px 0 white);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -29,6 +34,15 @@ body {
 .container {
     display: flex;
     flex-direction: row;
+}
+
+#background {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .home_container {
@@ -47,11 +61,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 68vw;
+    width: 70vw;
     height: 100vh;
     text-align: center;
     overflow-y: scroll;
-    margin-right: 2vw;
 }
 
 #content h1 {
@@ -62,13 +75,14 @@ body {
 #about_container {
     display: flex;
     flex-direction: row;
-    margin-bottom: 1.5em;
+    margin-bottom: 3.5vh;
 }
 
 .button {
     font-size: 3vh;
     font-family: Helv;
-    background-color: black;
+    border-style: ridge;
+    border-color: white;
     border-radius: 2vh;
     padding: 1vh;
     text-decoration: none;
@@ -83,8 +97,13 @@ body {
 }
 
 .button:hover {
-    background-color: #111;
-    color: goldenrod;
+    color: #E9AC29;
+    border-color: #E9AC29;
+    background-color: black;
+}
+
+#hometitle {
+    margin-top: 6vh;
 }
 
 h2 {
@@ -96,15 +115,23 @@ h2 {
     flex-direction: column;
     margin-top: 0;
     max-width: 30vw;
+    margin-right: 3vw;
+}
+
+#profile {
+    max-width: 30vw;
+    min-width: 30vw;
 }
 
 #nocti {
-    max-width: 23vw;
+    max-width: 22.5vw;
+    min-width: 22.5vw;
     margin: auto;
 }
 
 #vtlogo {
     max-width: 25vw;
+    min-width: 25vw;
     margin: auto;
 }
 
@@ -115,18 +142,24 @@ h2 {
 #aboutText p {
     font-size: 2.9vh;
     margin: auto;
-    margin-bottom: 2em;
-    line-height: 2em;
+    margin-bottom: 3vh;
+    line-height: 5.825vh;
     text-align: left;
-    width: 79%;
+    width: 81%;
 }
 
 .centerimg {
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
-    max-width: 27vh;
-    max-height: 27vh;
+    max-width: 26vh;
+    max-height: 26vh;
+    min-width: 26vh;
+    min-height: 26vh;
+}
+
+#contact {
+    margin-top: 27.5vh;
 }
 
 #contact p {
@@ -134,7 +167,7 @@ h2 {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-    line-height: 2em;
+    line-height: 7.1vh;
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
@@ -152,7 +185,7 @@ h3 {
 }
 
 .mailto:hover {
-    color: goldenrod;
+    color: #E9AC29;
     cursor: pointer;
     transition-duration: 250ms;
 }
@@ -174,19 +207,19 @@ h3 {
 }
 
 .pagelinks {
-    font-size: 2.85vh;
+    font-size: 1.4em;
     color: white;
     text-decoration: none;
 }
 
 .pagelinks:hover {
-    color: goldenrod;
+    color: #E9AC29;
     cursor: pointer;
     transition-duration: 250ms;
 }
 
 .pagelinks.selectedpage {
-    color: goldenrod;
+    color: #E9AC29;
     text-decoration: underline;
 }
 
@@ -196,8 +229,13 @@ h3 {
 
 .links:hover {
     transition-duration: 250ms;
-    color: goldenrod;
+    color: #E9AC29;
     cursor: pointer;
+}
+
+.logolink:hover {
+    transition-duration: 250ms;
+    filter: invert(80%) sepia(20%) saturate(2300%) hue-rotate(350deg) brightness(385%) contrast(83%);
 }
 
 #sociallinks {
@@ -211,10 +249,4 @@ h3 {
     color: white;
     transition-duration: 0.2s;
     margin: .3vw;
-}
-
-@media (max-width: 800px) {
-    #sidebar {
-        display: none;
-    }
 }
