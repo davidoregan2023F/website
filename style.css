@@ -26,14 +26,135 @@ body {
     color: white;
 }
 
-#container {
+.container {
     display: flex;
     flex-direction: row;
 }
 
+.home_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.home_down {
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 #content {
-    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 68vw;
     height: 100vh;
+    text-align: center;
+    overflow-y: scroll;
+    margin-right: 2vw;
+}
+
+#content h1 {
+    font-family: AdamWoff;
+    font-size: 6vh;
+}
+
+#about_container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5em;
+}
+
+.button {
+    font-size: 3vh;
+    font-family: Helv;
+    background-color: black;
+    border-radius: 2vh;
+    padding: 1vh;
+    text-decoration: none;
+    color: white;
+    transition-duration: 250ms;
+}
+
+#portfoliolink .button {
+    padding: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.button:hover {
+    background-color: #111;
+    color: goldenrod;
+}
+
+h2 {
+    font-size: 3.6vh;
+}
+
+#aboutImage {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    max-width: 30vw;
+}
+
+#nocti {
+    max-width: 23vw;
+    margin: auto;
+}
+
+#vtlogo {
+    max-width: 25vw;
+    margin: auto;
+}
+
+.home_down p {
+    font-size: 2.9vh;
+}
+
+#aboutText p {
+    font-size: 2.9vh;
+    margin: auto;
+    margin-bottom: 2em;
+    line-height: 2em;
+    text-align: left;
+    width: 79%;
+}
+
+.centerimg {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 27vh;
+    max-height: 27vh;
+}
+
+#contact p {
+    font-size: 3.54vh;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 2em;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+h3 {
+    font-family: Silk;
+    font-size: 4.9vh;
+    margin: 3.5vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mailto {
+    color: white;
+}
+
+.mailto:hover {
+    color: goldenrod;
+    cursor: pointer;
+    transition-duration: 250ms;
 }
 
 #sidebar {
@@ -53,7 +174,7 @@ body {
 }
 
 .pagelinks {
-    font-size: larger;
+    font-size: 2.85vh;
     color: white;
     text-decoration: none;
 }
@@ -61,11 +182,22 @@ body {
 .pagelinks:hover {
     color: goldenrod;
     cursor: pointer;
+    transition-duration: 250ms;
 }
 
 .pagelinks.selectedpage {
     color: goldenrod;
     text-decoration: underline;
+}
+
+.links {
+    color: white;
+}
+
+.links:hover {
+    transition-duration: 250ms;
+    color: goldenrod;
+    cursor: pointer;
 }
 
 #sociallinks {
@@ -75,7 +207,7 @@ body {
 
 #sociallinks a {
     text-decoration: none;
-    font-size: medium;
+    font-size: 3vh;
     color: white;
     transition-duration: 0.2s;
     margin: .3vw;
