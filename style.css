@@ -1,3 +1,8 @@
+:root {
+    --gold: #E9AC29;
+    --clearblack: #000000af;
+}
+
 @font-face {
     font-family: 'Helv';
     src: URL('fonts/Helvetica.ttf') format('truetype');
@@ -97,9 +102,9 @@ body {
 }
 
 .button:hover {
-    color: #E9AC29;
-    border-color: #E9AC29;
-    background-color: black;
+    color: var(--gold);
+    border-color: var(--gold);
+    background-color: var(--clearblack);
 }
 
 #hometitle {
@@ -133,6 +138,7 @@ h2 {
     max-width: 25vw;
     min-width: 25vw;
     margin: auto;
+    margin-top: 1em;
 }
 
 .home_down p {
@@ -185,7 +191,7 @@ h3 {
 }
 
 .mailto:hover {
-    color: #E9AC29;
+    color: var(--gold);
     cursor: pointer;
     transition-duration: 250ms;
 }
@@ -195,7 +201,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #000;
     width: 30vw;
     height: 100vh;
     float: left;
@@ -213,13 +219,13 @@ h3 {
 }
 
 .pagelinks:hover {
-    color: #E9AC29;
+    color: var(--gold);
     cursor: pointer;
     transition-duration: 250ms;
 }
 
 .pagelinks.selectedpage {
-    color: #E9AC29;
+    color: var(--gold);
     text-decoration: underline;
 }
 
@@ -229,7 +235,7 @@ h3 {
 
 .links:hover {
     transition-duration: 250ms;
-    color: #E9AC29;
+    color: var(--gold);
     cursor: pointer;
 }
 
@@ -249,4 +255,45 @@ h3 {
     color: white;
     transition-duration: 0.2s;
     margin: .3vw;
+}
+
+.Project {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 30vh;
+    max-width: 30vh;
+    min-height: fit-content;
+    max-height: fit-content;
+    color: white;
+    text-decoration: none;
+    border: ridge;
+    border-radius: 3vh;
+    border-color: #ffffff00;
+    margin: 1.5vh;
+    padding: 3vh;
+    padding-bottom: 1.5vh;
+    align-items: center;
+    transition-duration: 500ms;
+}
+
+.Project:hover {
+    border-color: var(--gold);
+    background-color: var(--clearblack);
+    cursor: pointer;
+}
+
+.Project h2 {
+    font-size: 2.9vh;
+    margin: 1vh;
+}
+
+.Project p {
+    font-size: 2.2vh;
+}
+
+.Project img {
+    min-width: 30vh;
+    max-width: 30vh;
+    min-height: 30vh;
+    max-height: 30vh;
 }
