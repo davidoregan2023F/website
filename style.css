@@ -549,4 +549,12 @@ h3 {
         min-width: 75%;
         margin-bottom: 20px;
     }
+    #contact {
+        margin-top: 0;
+    }
+    #contact p {
+        margin-left: 7%;
+        margin-right: 7%;
+        width: 86%;
+    }
 }
