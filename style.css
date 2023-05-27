@@ -41,11 +41,6 @@ body {
     flex-direction: row;
 }
 
-.pngborder {
-    -webkit-filter: drop-shadow(2px 1px 0 white) drop-shadow(-1px -1px 0 white);
-    filter: drop-shadow(2px 1px 0 white) drop-shadow(-1px -1px 0 white);
-}
-
 #background {
     position: fixed;
     z-index: -1;
@@ -203,6 +198,11 @@ h3 {
     margin-right: 0;
 }
 
+.mailbox {
+    display: none;
+    margin: auto;
+}
+
 .mailto {
     color: white;
 }
@@ -228,12 +228,14 @@ h3 {
 
 #sidebar #logoimg {
     max-width: 85%;
+    margin-bottom: .5em;
 }
 
 .pagelinks {
     font-size: 1.4em;
     color: white;
     text-decoration: none;
+    margin-bottom: .7em;
 }
 
 .pagelinks:hover {
@@ -343,9 +345,9 @@ h3 {
 #collapsablemenu {
     display: none;
     min-width: 40%;
-    width: fit-content;
-    height: fit-content;
-    min-height: 100%;
+    width: max-content;
+    height: max-content;
+    min-height: 91%;
     z-index: 10;
     position: absolute;
     top: -20px;
@@ -354,6 +356,11 @@ h3 {
     background-color: #000;
     font-size: 4em;
     padding: 5vh;
+    overflow: hidden;
+}
+
+hr {
+    display: none;
 }
 
 #screencover {
@@ -362,7 +369,7 @@ h3 {
     z-index: 2;
     background-color: #0000003d;
     width: 100%;
-    height: 109%;
+    height: 100%;
 }
 
 #collapsablemenu .copyright {
@@ -535,6 +542,8 @@ h3 {
     #content {
         margin-top: 180px;
         width: 100vw;
+        overflow: visible;
+        scroll-margin-bottom: 180px;
     }
     #about_container {
         flex-direction: column;
@@ -551,10 +560,37 @@ h3 {
     }
     #contact {
         margin-top: 0;
+        margin-bottom: 0;
     }
     #contact p {
         margin-left: 7%;
         margin-right: 7%;
         width: 86%;
+    }
+    .home_container {
+        flex-direction: column;
+        overflow: visible;
+    }
+    #portfoliolink {
+        margin-top: 3em;
+        margin-bottom: 8.5em;
+    }
+    .container {
+        overflow: scroll;
+        height: 100vh;
+    }
+    #portfoliolink {
+        display: none;
+    }
+    .mailbox {
+        display: block;
+        margin-top: 1.3em;
+    }
+    hr {
+        width: 60%;
+        border: 2px solid #FFF;
+        margin-top: 65px;
+        margin-bottom: 65px;
+        display: block;
     }
 }
