@@ -1,6 +1,7 @@
 :root {
     --gold: #E9AC29;
     --clearblack: #000000af;
+    --goldfilter: invert(80%) sepia(20%) saturate(2300%) hue-rotate(350deg) brightness(385%) contrast(83%);
 }
 
 @font-face {
@@ -266,7 +267,7 @@ h3 {
 
 .logolink:hover {
     transition-duration: 250ms;
-    filter: invert(80%) sepia(20%) saturate(2300%) hue-rotate(350deg) brightness(385%) contrast(83%);
+    filter: var(--goldfilter);
 }
 
 #sociallinks {
@@ -349,8 +350,9 @@ h3 {
 
 #collapsablemenu {
     display: none;
-    min-width: 40%;
-    width: max-content;
+    min-width: 30%;
+    max-width: 50%;
+    width: fit-content;
     height: max-content;
     min-height: 91%;
     z-index: 10;
@@ -419,7 +421,7 @@ hr {
 }
 
 #menubutton:hover {
-    filter: invert(80%) sepia(20%) saturate(2300%) hue-rotate(350deg) brightness(385%) contrast(83%);
+    filter: var(--goldfilter);
 }
 
 @media only screen and (max-width: 1063px) {
@@ -593,13 +595,11 @@ hr {
     #portfoliolink {
         margin-top: 3em;
         margin-bottom: 8.5em;
+        display: none;
     }
     .container {
         overflow: scroll;
         height: 100vh;
-    }
-    #portfoliolink {
-        display: none;
     }
     .mailbox {
         display: block;
