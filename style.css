@@ -1,6 +1,7 @@
 :root {
     --gold: #E9AC29;
     --clearblack: #000000af;
+    --coverblack: #0000003d;
     --goldfilter: invert(80%) sepia(20%) saturate(2300%) hue-rotate(350deg) brightness(385%) contrast(83%);
 }
 
@@ -39,7 +40,7 @@ body {
     padding: 0;
     background-color: rgb(34, 34, 34);
     font-family: RobotoL;
-    color: white;
+    color: #FFF;
 }
 
 .container {
@@ -93,11 +94,11 @@ body {
     font-size: 3vh;
     font-family: Helv;
     border-style: ridge;
-    border-color: white;
+    border-color: #FFF;
     border-radius: 2vh;
     padding: 1vh;
     text-decoration: none;
-    color: white;
+    color: #FFF;
     transition-duration: 250ms;
 }
 
@@ -210,7 +211,7 @@ h3 {
 }
 
 .mailto {
-    color: white;
+    color: #FFF;
 }
 
 .mailto:hover {
@@ -239,7 +240,7 @@ h3 {
 
 .pagelinks {
     font-size: 1.4em;
-    color: white;
+    color: #FFF;
     text-decoration: none;
     margin-bottom: .7em;
 }
@@ -256,7 +257,7 @@ h3 {
 }
 
 .links {
-    color: white;
+    color: #FFF;
 }
 
 .links:hover {
@@ -278,7 +279,7 @@ h3 {
 #sociallinks a {
     text-decoration: none;
     font-size: 3vh;
-    color: white;
+    color: #FFF;
     transition-duration: 0.2s;
     margin: .3vw;
 }
@@ -290,7 +291,7 @@ h3 {
     max-width: 30vh;
     min-height: fit-content;
     max-height: fit-content;
-    color: white;
+    color: #FFF;
     text-decoration: none;
     border: ridge;
     border-radius: 3vh;
@@ -374,7 +375,7 @@ hr {
     display: none;
     position: absolute;
     z-index: 2;
-    background-color: #0000003d;
+    background-color: var(--coverblack);;
     width: 100%;
     height: 100%;
 }
@@ -457,7 +458,7 @@ hr {
         max-width: 15vh;
         min-height: fit-content;
         max-height: fit-content;
-        color: white;
+        color: #FFF;
         text-decoration: none;
         border: ridge;
         border-radius: 1.5vh;
@@ -505,7 +506,7 @@ hr {
         max-width: 15vh;
         min-height: fit-content;
         max-height: fit-content;
-        color: white;
+        color: #FFF;
         text-decoration: none;
         border: ridge;
         border-radius: 1.5vh;
