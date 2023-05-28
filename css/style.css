@@ -540,32 +540,32 @@ hr {
         max-height: 15vh;
     }
     .collapser {
-        min-height: 95px;
-        height: 95px;
-        max-height: 95px;
+        min-height: 190px;
+        height: 190px;
+        max-height: 190px;
     }
     .collapser #logoimg {
-        max-width: 400px;
-        max-height: 95px;
+        max-width: 800px;
+        max-height: 190px;
     }
     .collapser #menubutton {
-        width: 95px;
+        width: 190px;
     }
     #collapsablemenu2 {
-        min-height: 100px;
-        height: 100px;
-        max-height: 100px;
+        min-height: 200px;
+        height: 200px;
+        max-height: 200px;
     }
     #menuclose #menubutton {
-        margin: 7.5px;
-        height: 95px;
-        width: 95px;
+        margin: 15px;
+        height: 190px;
+        width: 190px;
     }
     #content {
-        margin-top: 90px;
+        margin-top: 180px;
         width: 100vw;
         overflow: visible;
-        scroll-margin-bottom: 90px;
+        scroll-margin-bottom: 180px;
     }
     #about_container {
         flex-direction: column;
