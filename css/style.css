@@ -7,27 +7,27 @@
 
 @font-face {
     font-family: 'AdamWoff';
-    src: url('fonts/adam.woff2');
+    src: url('/fonts/adam.woff2');
 }
 
 @font-face {
     font-family: 'Helv';
-    src: URL('fonts/Helvetica.ttf') format('truetype');
+    src: URL('/fonts/Helvetica.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Omnibus';
-    src: url('fonts/AutobusOmnibus-K7127.ttf');
+    src: url('/fonts/AutobusOmnibus-K7127.ttf');
 }
 
 @font-face {
     font-family: 'RobotoL';
-    src: url('fonts/roboto-light.woff2');
+    src: url('/fonts/roboto-light.woff2');
 }
 
 @font-face {
     font-family: 'Silk';
-    src: URL('fonts/slkscr.ttf') format('truetype');
+    src: URL('/fonts/slkscr.ttf') format('truetype');
 }
 
 html {
