@@ -599,7 +599,7 @@ hr {
         display: none;
     }
     .container {
-        overflow: hidden;
+        overflow: scroll;
         height: 100vh;
     }
     .mailbox {
