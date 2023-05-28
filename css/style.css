@@ -355,7 +355,7 @@ h3 {
     max-width: 50%;
     width: fit-content;
     height: max-content;
-    min-height: 100%;
+    min-height: 91%;
     z-index: 10;
     position: absolute;
     top: -20px;
@@ -530,8 +530,8 @@ hr {
         font-size: 1.1vh;
     }
     .pagelinks {
-        font-size: .7em;
-        margin-bottom: .35em;
+        font-size: 1.4em;
+        margin-bottom: .7em;
     }
     .Project img {
         min-width: 15vh;
@@ -540,32 +540,32 @@ hr {
         max-height: 15vh;
     }
     .collapser {
-        min-height: 95px;
-        height: 95px;
-        max-height: 95px;
+        min-height: 190px;
+        height: 190px;
+        max-height: 190px;
     }
     .collapser #logoimg {
-        max-width: 400px;
-        max-height: 95px;
+        max-width: 800px;
+        max-height: 190px;
     }
     .collapser #menubutton {
-        width: 95px;
+        width: 190px;
     }
     #collapsablemenu2 {
-        min-height: 100px;
-        height: 100px;
-        max-height: 100px;
+        min-height: 200px;
+        height: 200px;
+        max-height: 200px;
     }
     #menuclose #menubutton {
-        margin: 7.5px;
-        height: 95px;
-        width: 95px;
+        margin: 15px;
+        height: 190px;
+        width: 190px;
     }
     #content {
-        margin-top: 90px;
+        margin-top: 180px;
         width: 100vw;
         overflow: visible;
-        scroll-margin-bottom: 90px;
+        scroll-margin-bottom: 180px;
     }
     #about_container {
         flex-direction: column;
