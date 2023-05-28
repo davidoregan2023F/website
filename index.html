@@ -13,6 +13,12 @@
         <link rel="shortcut icon" type="image/x-icon" href=/horizonzzIcon.ico>
         <link rel="apple-touch-icon" type="image/x-icon" href=/horizonzzIcon.ico>
         <script src=functions.js></script>
+        <script>
+            var ua = window.navigator.userAgent;
+            if ((!!ua.match(/iPad/i) || !!ua.match(/iPhone/i)) && (!!ua.match(/WebKit/i))) {
+                document.querySelectorAll('.container').style.height = '91%';
+            }
+        </script>
     </head>
     <body>
         <div class=container>
