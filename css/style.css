@@ -183,8 +183,11 @@ h2 {
     min-height: 26vh;
 }
 
-#contact {
-    margin-top: 27.5vh;
+#contactWindow {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #contact p {
