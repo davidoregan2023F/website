@@ -13,6 +13,11 @@
 }
 
 @font-face {
+    font-family: 'Awesome';
+    src: url('../fonts/Font-Awesome-6-Free-Regular-400.otf');
+}
+
+@font-face {
     font-family: 'Helv';
     src: URL('../fonts/Helvetica.ttf') format('truetype');
 }
@@ -68,7 +73,7 @@ body {
     gap:  3.5em;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .navbutton {
@@ -96,15 +101,9 @@ a {
 .content {
     width: 65%;
     margin: auto;
-    /* margin-top: 4.5em;
-    font-size: 1.3em; */
+    margin-top: 1.5em;
 }
 
 red {
     color:  var(--lightred);
-    background-color: var(--spacegrey);
-    padding: .1em;
-    padding-right: .2em;
-    padding-left: .2em;
-    border-radius: .3em;
 }

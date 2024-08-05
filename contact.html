@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> David O'Regan </title>
+        <link rel=stylesheet href=./css/universal.css>
+        <link rel=stylesheet href=./css/contact.css>
+        <style>
+            @media only screen and (max-width: 480px),
+            only screen and (max-device-width: 480px) {
+                /* Action for mobile */
+            }
+        </style>
+        <link rel="shortcut icon" type="image/x-icon" href=./davidanimated.ico>
+        <link rel="apple-touch-icon" type="image/x-icon" href=./davidanimated.ico>
+    </head>
+    <body>
+        <div class=navbar>
+            <a href='./index.html'><span class=navbutton>Home</span></a>
+            <a href='./portfolio.html'><span class=navbutton>Portfolio</span></a>
+            <a href='https://github.com/dave-oregan' target='_blank'><span class=navbutton>GitHub</span></a>
+            <a href='./contact.html'><span class=navbutton>Contact</span></a>
+        </div>
+        <div class=content>
+            <h1><red>Questions, Offers, or Inquiries?</red></h1>
+            <p>Please leave me a message here and I'll get back to you as soon as possible.</p>
+            <form id=emailform autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="cfaf0cf5-cdd6-42b4-ac19-b268b945f8aa">
+
+                <input type="text" name="name" placeholder="Type your name..." required>
+                <input type="email" name="email" placeholder="Type your email..." required>
+                <input type="text" name="subject" placeholder="Type your subject..." required/>
+                <textarea id="textbox" name="message" placeholder="Type your message..." required></textarea>
+            
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <!-- hCaptcha -->
+                <div class="h-captcha" data-captcha="true"></div>
+            
+                <button type="submit">Send Message</button>
+            </form>
+            <script src="https://web3forms.com/client/script.js" async defer></script>
+            <script>
+                const form = document.getElementById('emailform')
+                
+                form.addEventListener('submit', function(e) {
+                
+                    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value
+                
+                    if (!hCaptcha) {
+                        e.preventDefault();
+                        alert("Please fill out captcha field")
+                        return
+                    }
+                })
+            </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    var textarea = document.getElementById('textbox')
+
+                    function autoResize() {
+                        textarea.style.height = 'auto'
+                        textarea.style.height = textarea.scrollHeight + 'px'
+                    }
+
+                    textarea.addEventListener('input', autoResize)
+                    autoResize()
+                })
+            </script>
+        </div>
+    </body>
+</html>

@@ -12,7 +12,6 @@
         </style>
         <link rel="shortcut icon" type="image/x-icon" href=./davidanimated.ico>
         <link rel="apple-touch-icon" type="image/x-icon" href=./davidanimated.ico>
-        <!-- <script src=./functions.js></script> -->
     </head>
     <body>
         <div class=navbar>
@@ -28,7 +27,12 @@
             <div id=textintro>
                 <span style="font-size: 2em;">Hello! I'm <red>David O'Regan</red>.</span>
                 <span>I am a <red>College Student</red> and Self Tought <red>Software Engineer</red>.</span>
-                <span id=enter-site-button onclick='document.getElementById(`content`).scrollIntoView({behavior: "smooth", block: "start"});'>Enter <a style="font-size: 1.3em;">↓</a></span>
+                <span id=enter-site-button onclick='document.getElementById(`content`).scrollIntoView({behavior: "smooth", block: "start"});'>
+                    <div id=button-pulse></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                </span>
             </div>
         </div>
         <div id=content class=content>

@@ -1,0 +1,114 @@
+body {
+    height: 100vh;
+}
+
+.content {
+    margin-top: 7.5em;
+    width: 60%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: fit-content;
+    gap: 1em;
+}
+
+.content form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+form input {
+    background-color: var(--darkspace);
+    color: var(--writegrey);
+    border: 0;
+    outline: none;
+    width: 90%;
+    padding: .7em;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    font-family: Montserrat;
+    border-radius: 1em;
+    
+    text-decoration: none;
+    background-image: linear-gradient( var(--lightred),  var(--lightred));
+    background-size: 0% 0.2em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out;
+}
+
+form input:hover, form input:active, form input:focus {
+    background-size: 100% 0.2em;
+}
+
+form textarea {
+    background-color: var(--darkspace);
+    color: var(--writegrey);
+    width: 80%;
+    min-height: 7em;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border: 0;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    font-size: 1em;
+    font-family: Montserrat;
+    border-radius: 1em;
+    
+    text-decoration: none;
+    background-image: linear-gradient( var(--lightred),  var(--lightred));
+    background-size: 0% 0.2em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out;
+}
+
+form textarea:hover, form textarea:focus {
+    background-size: 100% 0.2em;
+}
+
+form button {
+    margin-top: 1em;
+    border: none;
+    padding: 1em;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    background-color: var(--darkspace);
+    color: #FFF;
+    font-size: 1.2em;
+    font-family: Montserrat;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    
+    text-decoration: none;
+    background-image: linear-gradient( var(--gold),  var(--gold));
+    background-size: 0% 0.2em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out, text-shadow 200ms;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-size: 100% 0.2em;
+    text-shadow: 0 0 .65px #FFF, 0 0 .65px #FFF;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

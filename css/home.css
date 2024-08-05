@@ -25,27 +25,47 @@
 }
 
 #enter-site-button {
-    padding-top: .6em;
-    padding-bottom: .7em;
-    padding-right: 2.4em;
-    padding-left: 2.4em;
-    border: 1px solid #FFF;
-    border-radius: 1em;
+    width: 3em;
+    height: 3em;
+    background-color: var(--lightred);
+    border-radius: 100%;
     margin: auto;
-    margin-top: 1em;
-    background-image: linear-gradient( var(--lightred),  var(--lightred));
-    background-size: 0% 100%;
-    background-position-y: 100%;
-    background-position-x: 0%;
-    background-repeat: no-repeat;
-    transition: background-size 250ms ease-in-out, text-shadow 200ms;
+    margin-top: 2em;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi {
+    margin-top: .6%;
+    position: absolute;
 }
 
 #enter-site-button:hover {
     cursor: pointer;
-    background-size: 100% 100%;
-    text-shadow: 0 0 .95px #FFF, 0 0 .95px #FFF;
 }
+
+#button-pulse {
+    width: 3em;
+    height: 3em;
+    background-color: var(--lightred);
+    border-radius: 100%;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
 
 #background {
     height: 100vh;
@@ -57,4 +77,12 @@
 
 #credit {
     color: var(--writegrey)
+}
+
+red {
+    background-color: var(--spacegrey);
+    padding: .1em;
+    padding-right: .2em;
+    padding-left: .2em;
+    border-radius: .3em;
 }
