@@ -1,0 +1,110 @@
+:root {
+    --gold: #E5BA6A;
+    --spacegrey: #282C34;
+    --darkspace: #21252B;
+    --writegrey: #ABB2BF;
+    --lightred: #E06C75;
+    --goldfilter: invert(80%) sepia(20%) saturate(2300%) hue-rotate(350deg) brightness(385%) contrast(83%);
+}
+
+@font-face {
+    font-family: 'AdamWoff';
+    src: url('../fonts/adam.woff2');
+}
+
+@font-face {
+    font-family: 'Helv';
+    src: URL('../fonts/Helvetica.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: URL('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Omnibus';
+    src: url('../fonts/AutobusOmnibus-K7127.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoL';
+    src: url('../fonts/roboto-light.woff2');
+}
+
+@font-face {
+    font-family: 'Silk';
+    src: URL('../fonts/slkscr.ttf') format('truetype');
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--spacegrey);
+    color: var(--writegrey);
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    background-color: var(--darkspace);
+    width: 100%;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    gap:  3.5em;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.navbutton {
+    color: var(--gold);
+    font-size: 1.3em;
+    
+    background-image: linear-gradient( var(--gold),  var(--gold));
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+
+    transition: background-size 250ms ease-in-out, text-shadow 200ms;
+}
+
+.navbutton:hover {
+    text-shadow: 0 0 .65px var(--gold), 0 0 .65px var(--gold);
+    background-size: 100% 0.1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 65%;
+    margin: auto;
+    /* margin-top: 4.5em;
+    font-size: 1.3em; */
+}
+
+red {
+    color:  var(--lightred);
+    background-color: var(--spacegrey);
+    padding: .1em;
+    padding-right: .2em;
+    padding-left: .2em;
+    border-radius: .3em;
+}

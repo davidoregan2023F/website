@@ -1,0 +1,60 @@
+.content {
+}
+
+#introdiv {
+    position: relative;
+    height: 100vh;
+    min-width: 100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textintro {
+    margin-top: 5vh;
+    position: absolute;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    row-gap: .5em;
+    font-size: 1.3em;
+}
+
+#enter-site-button {
+    padding-top: .6em;
+    padding-bottom: .7em;
+    padding-right: 2.4em;
+    padding-left: 2.4em;
+    border: 1px solid #FFF;
+    border-radius: 1em;
+    margin: auto;
+    margin-top: 1em;
+    background-image: linear-gradient( var(--lightred),  var(--lightred));
+    background-size: 0% 100%;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out, text-shadow 200ms;
+}
+
+#enter-site-button:hover {
+    cursor: pointer;
+    background-size: 100% 100%;
+    text-shadow: 0 0 .95px #FFF, 0 0 .95px #FFF;
+}
+
+#background {
+    height: 100vh;
+    min-width: 100%;
+    max-height: 100vh;
+    object-fit: fill;
+    position: absolute;
+}
+
+#credit {
+    color: var(--writegrey)
+}
