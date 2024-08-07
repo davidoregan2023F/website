@@ -1,4 +1,9 @@
 .content {
+    max-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #introdiv {
@@ -79,10 +84,60 @@
     color: var(--writegrey)
 }
 
-red {
+red-tag {
     background-color: var(--spacegrey);
     padding: .1em;
     padding-right: .2em;
     padding-left: .2em;
     border-radius: .3em;
+}
+
+.about_title {
+    margin-bottom: 0em;
+}
+
+.about_row1 {
+    max-width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_skills {
+    width: 50vw;
+    border-radius: 2em;
+    border: 2px solid var(--gold);
+    background-color: var(--darkspace);
+    padding-right: 1.2em;
+    padding-left: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+.row_divider {
+    width: 70vw;
+    border-radius: 2em;
+    border-top: 4px solid var(--gold);
+}
+
+.about_row2 {
+    width: 60vw;
+}
+
+.about_row2 p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.support {
+    height: fit-content;
+    padding-bottom: .5em;
+}
+
+.support_h2 {
+    margin-bottom: 0;
+}
+
+.footer {
+    padding-top: .5em;
 }

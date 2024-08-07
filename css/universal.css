@@ -4,7 +4,9 @@
     --darkspace: #21252B;
     --writegrey: #ABB2BF;
     --lightred: #E06C75;
-    --goldfilter: invert(80%) sepia(20%) saturate(2300%) hue-rotate(350deg) brightness(385%) contrast(83%);
+    --greyfilter: brightness(0) saturate(100%) invert(86%) sepia(10%) saturate(305%) hue-rotate(180deg) brightness(81%) contrast(91%);
+    --goldfilter: invert(81%) sepia(12%) saturate(7486%) hue-rotate(355deg) brightness(95%) contrast(79%);
+    --goldfilterm: invert(80%) sepia(20%) saturate(2300%) hue-rotate(350deg) brightness(385%) contrast(83%);
 }
 
 @font-face {
@@ -101,9 +103,60 @@ a {
 .content {
     width: 65%;
     margin: auto;
-    margin-top: 1.5em;
+    padding-top: 5.5em;
 }
 
-red {
+red-tag {
     color:  var(--lightred);
+}
+
+.link {
+    color: var(--writegrey);
+    text-decoration: underline;
+    transition-duration: 200ms;
+}
+
+.link:hover {
+    color: var(--lightred);
+}
+
+.footer {
+    height: fit-content;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    color: var(--writegrey);
+}
+
+.logolink {
+    transition-duration: 200ms;
+    filter: var(--greyfilter);
+}
+
+.logolink_m {
+    transition-duration: 200ms;
+    filter: var(--greyfilter);
+}
+
+.logolink:hover {
+    opacity: 70%;
+}
+
+.logolink_m:hover {
+    opacity: 70%;
+}
+
+#sociallinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+#sociallinks a {
+    text-decoration: none;
 }

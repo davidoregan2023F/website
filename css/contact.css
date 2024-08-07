@@ -28,7 +28,7 @@ form input {
     color: var(--writegrey);
     border: 0;
     outline: none;
-    width: 90%;
+    width: 80%;
     padding: .7em;
     margin-bottom: 1.5em;
     font-size: 1em;
@@ -83,11 +83,10 @@ form button {
     padding-left: 1.6em;
     padding-right: 1.6em;
     background-color: var(--darkspace);
-    color: #FFF;
+    color: var(--writegrey);
     font-size: 1.2em;
     font-family: Montserrat;
     border-radius: 1em;
-    margin-bottom: 2em;
     
     text-decoration: none;
     background-image: linear-gradient( var(--gold),  var(--gold));
@@ -111,4 +110,8 @@ h1 {
 p {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.footer {
+    margin-top: 1em;
 }
