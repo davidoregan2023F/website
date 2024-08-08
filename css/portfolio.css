@@ -1,0 +1,74 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.portfolio-container {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    width: 20rem;
+    height: 22rem;
+}
+
+.card-content {
+    text-align: center;
+    position: relative;
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-content {
+    transform: rotateY(.5turn);
+}
+
+.card-front, .card-back {
+    background-color: var(--darkspace);
+    min-width: fit-content;
+    backface-visibility: hidden;
+    border-radius: 2rem;
+    position: absolute;
+    height: 22rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card-back {
+    transform: rotateY(.5turn);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 1rem;
+}
+
+.card-img {
+    width: 18rem;
+    height: 18rem;
+}
+
+.link-card {
+    color: var(--writegrey);
+    text-decoration: underline;
+    transition-duration: 200ms;
+    background-color: var(--spacegrey);
+    border-radius: .3rem;
+    padding: .2rem;
+}
+
+.link-card:hover {
+    color: var(--lightred);
+}
