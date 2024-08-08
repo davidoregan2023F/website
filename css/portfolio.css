@@ -29,7 +29,7 @@
 }
 
 .rotate .card-content {
-    transform: rotateY(.5turn);
+    transform: rotateY(.5turn) !important;
 }
 
 .card-front, .card-back {
