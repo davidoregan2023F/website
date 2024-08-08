@@ -4,30 +4,56 @@
         <title> David O'Regan </title>
         <link rel=stylesheet href=./css/universal.css>
         <link rel=stylesheet href=./css/portfolio.css>
-        <style>
-            @media only screen and (max-width: 480px),
-            only screen and (max-device-width: 480px) {
-                /* Action for mobile */
-            }
-        </style>
         <link rel="shortcut icon" type="image/x-icon" href=./davidanimated.ico>
         <link rel="apple-touch-icon" type="image/x-icon" href=./davidanimated.ico>
+        <script src='./javascript/functions.js'></script>
     </head>
     <body>
+        <span id=mobile_menu onclick=openMobileMenu()>
+            <svg xmlns="http://www.w3.org/2000/svg" width="8em" height="8em" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </span>
         <div class=navbar>
             <a href='./index.html'><span class=navbutton>Home</span></a>
             <a href='./portfolio.html'><span class=navbutton>Portfolio</span></a>
             <a href='https://github.com/dave-oregan' target='_blank'><span class=navbutton>GitHub</span></a>
             <a href='./contact.html'><span class=navbutton>Contact</span></a>
         </div>
+        <div id=mobile_navigation class='navbar_mobile hidden'>
+            <span id=mobile_menu_close onclick=closeMobileMenu()>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8em" height="8em" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                </svg>
+            </span>
+            <a class=navbutton_mobile_a href='./index.html'><span class=navbutton_mobile>Home</span></a>
+            <a class=navbutton_mobile_a href='./portfolio.html'><span class=navbutton_mobile>Portfolio</span></a>
+            <a class=navbutton_mobile_a href='https://github.com/dave-oregan' target='_blank'><span class=navbutton_mobile>GitHub</span></a>
+            <a class=navbutton_mobile_a href='./contact.html'><span class=navbutton_mobile>Contact</span></a>
+            <div class=mobile_nav_footer>
+                <div class=sociallinks_nav>
+                    <a href=https://youtube.com/@horizonzz target=_blank>
+                        <img class=logolink_mobile src='./images/youtubeIcon.png' alt=youtube_logo height=70px>
+                    </a>
+                    <a href=https://horizonzz.itch.io target=_blank>
+                        <img class=logolink_mobile src='./images/itchLogo.png' alt=itchio_logo height=80px>
+                    </a>
+                    <a href=https://steamcommunity.com/id/horizonzz/myworkshopfiles/ target=_blank>
+                        <img class=logolink_mobile src='./images/steamicon.png' alt=steam_logo height=82px>
+                    </a>
+                </div>
+                <p>Copyright © 2024 David O'Regan</p>
+                <p> - All Rights Reserved.</p>
+            </div>
+        </div>
         <div class=content>
             <div class=portfolio-container>
-                <!-- <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <!-- <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/davidanimated.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Project Title</h3>
                             <a class=link-card href='https://daveoregan.com' target='_blank'>daveoregan.com</a>
                             <p>Project Description - write a longer description here</p>
@@ -36,12 +62,12 @@
                         </div>
                     </div>
                 </div> -->
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/davidanimated.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Personal Site (Current)</h3>
                             <a class=link-card href='https://daveoregan.com' target='_blank'>daveoregan.com</a>
                             <p>A website to house all of my projects, and for people to learn more about me.</p>
@@ -50,12 +76,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/abigail.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Abigail O'Regan's Website</h3>
                             <a class=link-card href='https://abigailoregan.com' target='_blank'>abigailoregan.com</a>
                             <p>An online hub for Abigail to share and sell her work with the world.</p>
@@ -64,12 +90,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/granusearch.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Culture List View & [Kei] Culture and Faith Compatch</h3>
                             <a class=link-card href='https://steamcommunity.com/sharedfiles/filedetails/?id=3300704609' target='_blank'>Steam Workshop - CK3</a>
                             <p>This is a compatibility mod for the Culture and Faith Granularity mod and the Culture List View mod for the game Crusaider Kings 3.</p>
@@ -78,12 +104,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/missingcultures.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>The Missing Cultures Collection - Prussian</h3>
                             <a class=link-card href='https://steamcommunity.com/sharedfiles/filedetails/?id=3299538028' target='_blank'>Steam Workshop - CK3</a>
                             <p>This is a mod that adds the Low Prussian culture into Crusaider Kings 3.</p>
@@ -92,12 +118,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/finance.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Monthly Finance Calculator</h3>
                             <a class=link-card href='https://finance.daveoregan.com' target='_blank'>finance.daveoregan.com</a>
                             <p>The Monthly Finance Calculator is an online tool that helps users to block out their monthly finances. Created using React Tsx.</p>
@@ -106,26 +132,26 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/lockicon.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Booksafe (App)</h3>
-                            <a class=link-card href='https://booksafe.daveoregan.com/download' target='_blank'>booksafe.daveoregan.com/download</a>
+                            <a class=link-card href='https://booksafe.daveoregan.com/download' target='_blank'>BookSafe Download Page</a>
                             <p>BookSafe is an app that aims to help you keep track of all your accounts in the most convenient, non-invasive way possible.</p>
                             <p>HTML, JavaScript, CSS</p>
                             <p>15 March 2024</p>
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/missingcultures.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>The Missing Cultures Collection - Turkish</h3>
                             <a class=link-card href='https://steamcommunity.com/sharedfiles/filedetails/?id=3160397614' target='_blank'>Steam Workshop - CK3</a>
                             <p>This is a mod that adds the Anatolian Turkish culture into Crusaider Kings 3 early.</p>
@@ -134,12 +160,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/missingcultures.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>The Missing Cultures Collection - Israeli</h3>
                             <a class=link-card href='https://steamcommunity.com/sharedfiles/filedetails/?id=3034520695' target='_blank'>Steam Workshop - CK3</a>
                             <p>This is a mod that adds the Israeli culture into Crusaider Kings 3.</p>
@@ -148,12 +174,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/missingcultures.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>The Missing Cultures Collection - Albanian</h3>
                             <a class=link-card href='https://steamcommunity.com/sharedfiles/filedetails/?id=3029994532' target='_blank'>Steam Workshop - CK3</a>
                             <p>This is a mod that adds the Albanian culture into Crusaider Kings 3.</p>
@@ -162,12 +188,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/horizonzzIcon.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Personal Site (v2)</h3>
                             <a class=link-card href='https://web.archive.org/web/20230528195851/https://horizonzz.com/index.html' target='_blank'>Internet Archive</a>
                             <p>An old website which used to house my projects. This website used the 'horizonzz.com' domain.</p>
@@ -176,12 +202,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/1418fist.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>FRC Team 1418</h3>
                             <a class=link-card href='https://1418.team' target='_blank'>1418.team</a>
                             <p>1418.team is the official website for FRC Team 1418, where it is possible to view their robots as far back as 2004!</p>
@@ -190,12 +216,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/vs_logo.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>The VictiScout Compiler</h3>
                             <a class=link-card href='https://github.com/frc1418/VictiScout-Compiler/releases' target='_blank'>GitHub Release Page</a>
                             <p>Application for compiling scouting data collected using <a class=link href='https://github.com/frc1418/VictiScout/releases' target='_blank'>VictiScout</a>. Written using Electron for easy customization.</p>
@@ -204,12 +230,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/as_mask.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>English Runes</h3>
                             <a class=link-card href='https://runes.daveoregan.com' target='_blank'>runes.daveoregan.com</a>
                             <p>This website shows people what it may have been like if English had kept their old writing system, runes.</p>
@@ -218,12 +244,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/hc_icon.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>HorizonZz's Classics</h3>
                             <a class=link-card href='https://classics.daveoregan.com' target='_blank'>classics.daveoregan.com</a>
                             <p>HorizonZz's Classics is a repository site for all the retro-style games that I have created or will create. Enjoy!</p>
@@ -232,12 +258,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/oldlock.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>BookSafe (Site)</h3>
                             <a class=link-card href='https://booksafe.daveoregan.com' target='_blank'>booksafe.daveoregan.com</a>
                             <p>BookSafe is an online tool meant to help people securely keep track of all their accounts.</p>
@@ -246,12 +272,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/horizonzzIcon.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Personal Site (v1)</h3>
                             <a class=link-card href='https://web.archive.org/web/20230524001004/https://horizonzz.com/index.html' target='_blank'>Internet Archive</a>
                             <p>The first website to house my projects. This website used the 'horizonzz.com' domain.</p>
@@ -260,12 +286,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/pengu_bordered.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Pengu: 2D Platforming</h3>
                             <a class=link-card href='https://horizonzz.itch.io/pengu' target='_blank'>Pengu Itch.io</a>
                             <p>Pengu is a 2D Platforming game, where the only goal is to get as high as possible. The game features a live global leaderboard.</p>
@@ -274,12 +300,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/todo.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Plan It, Do It!</h3>
                             <a class=link-card href='https://todo.daveoregan.com' target='_blank'>todo.daveoregan.com</a>
                             <p>This is a to-do list website that helps its users keep track of their activities.</p>
@@ -288,12 +314,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/palindromer.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Palindromer</h3>
                             <a class=link-card href='https://dave-oregan.github.io/palindromer/' target='_blank'>GitHub Pages Site</a>
                             <p>This is a simple website, created for a school project, that checks if a word is a palindrome or not-- aka if they are the same back-to-front.</p>
@@ -302,12 +328,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/jl.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>The Justice League (Fan Site)</h3>
                             <a class=link-card href='https://dave-oregan.github.io/justiceleague/' target='_blank'>GitHub Pages Site</a>
                             <p>This is a fan site of the justice league, with some fan-casts that I had when it was made.</p>
@@ -316,12 +342,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/notePadIcon.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>NotePad</h3>
                             <a class=link-card href='https://horizonzz.itch.io/notepad' target='_blank'>Notepad Itch.io</a>
                             <p>This is a notepad clone using Java, which was made because I didn't like the apple txt editor.</p>
@@ -330,12 +356,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/frcdash.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>FRC Dashboard 2022</h3>
                             <a class=link-card href='https://github.com/frc1418/2022-dashboard' target='_blank'>GitHub Repository</a>
                             <p>The FRC Dashboard is an application that enables the driver of a robot to see everything going on inside and around the robot. It communicates with the robot over a wifi signal.</p>
@@ -344,12 +370,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/earth.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Seasons of the Earth</h3>
                             <a class=link-card href='https://horizonzz.itch.io/seasons-earth' target='_blank'>Seasons of the Earth Itch.io</a>
                             <p>This is an application that simulates the yearly orbit of the Earth around our sun.</p>
@@ -358,12 +384,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/babyElephant.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>USA Birth Data</h3>
                             <a class=link-card href='https://horizonzz.itch.io/birth-data-usa' target='_blank'>USA Birth Data Itch.io</a>
                             <p>This program is a statistical analysis of all the births in the USA between 2000 and 2014.</p>
@@ -372,12 +398,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/rnb.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Red & Blue</h3>
                             <a class=link-card href='https://horizonzz.itch.io/red-blue' target='_blank'>Red & Blue Itch.io</a>
                             <p>Red & Blue is a short and fun math game that can be used to practice addition and subtraction.</p>
@@ -386,12 +412,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/robo.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Droid Invasion</h3>
                             <a class=link-card href='https://horizonzz.itch.io/droid-invasion' target='_blank'>Droid Invasion Itch.io</a>
                             <p>You are a soldier that has been ordered to the moon to guard the core after all the scientists working on it have been turned into zombies by killer robots! Will you survive your mission?</p>
@@ -400,12 +426,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/pj.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Your Parents' Journey</h3>
                             <a class=link-card href='https://horizonzz.itch.io/journey-from-school' target='_blank'>Your Parents' Journey Itch.io</a>
                             <p>A short & free platformer game based on the common joke about how crazy our parents' journies were to and from school. Enjoy!</p>
@@ -414,12 +440,12 @@
                         </div>
                     </div>
                 </div>
-                <div class=card>
-                    <div class=card-content>
-                        <div class=card-front>
+                <div onclick=rotateToggle(this) class=card>
+                    <div onclick=rotateToggle(this) class=card-content>
+                        <div onclick=rotateToggle(this) class=card-front>
                             <img class=card-img src='./images/dbc.png'>
                         </div>
-                        <div class=card-back>
+                        <div onclick=rotateToggle(this) class=card-back>
                             <h3>Darkness by Candlelight</h3>
                             <a class=link-card href='https://horizonzz.itch.io/darkness-by-candlelight' target='_blank'>Darkness by Candlelight Itch.io</a>
                             <p>You wake up in your room, it is dark and there is no sign of your parents... what will you do?</p>
@@ -430,7 +456,7 @@
                 </div>
             </div>
             <div class=footer>
-                <div id=sociallinks>
+                <div class=sociallinks>
                     <a href=https://youtube.com/@horizonzz target=_blank>
                         <img class=logolink_m src='./images/youtubeIcon.png' alt=youtube_logo height=35px>
                     </a>
@@ -441,7 +467,7 @@
                         <img class=logolink_m src='./images/steamicon.png' alt=steam_logo height=41px>
                     </a>
                 </div>
-                <span>Copyright © 2024 David O'Regan - All Rights Reserved.</span>
+                <span class=copyright>Copyright © 2024 David O'Regan - All Rights Reserved.</span>
             </div>
         </div>
     </body>

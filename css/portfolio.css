@@ -1,4 +1,4 @@
-*, *::before, *::after {
+.card, .card-content, .card-back, .card-front, .card-img, .link-card, .card-back p, .card-back h3 {
     box-sizing: border-box;
     margin: 0;
 }
@@ -24,7 +24,11 @@
     transform-style: preserve-3d;
 }
 
-.card:hover .card-content {
+.card:hover .card-content, .card:focus .card-content, .card:active .card-content {
+    transform: rotateY(.5turn);
+}
+
+.rotate .card-content {
     transform: rotateY(.5turn);
 }
 
@@ -66,9 +70,24 @@
     transition-duration: 200ms;
     background-color: var(--spacegrey);
     border-radius: .3rem;
-    padding: .2rem;
+    padding: .6rem;
 }
 
 .link-card:hover {
     color: var(--lightred);
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .content {
+        width: 95%;
+    }
+
+    .card {
+        scale: 1.1;
+    }
+
+    .portfolio-container {
+        gap: 4rem;
+        row-gap: 4rem;
+    }
 }

@@ -116,3 +116,31 @@ p {
     margin-top: 0;
     padding-top: 0;
 }
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 2em;
+        width: 80%;
+    }
+    
+    form input {
+        font-size: 2em;
+    }
+    
+    form textarea {
+        font-size: 2em;
+    }
+
+    .h-captcha {
+        scale: 1.5;
+    }
+
+    form button {
+        font-size: 2em;
+    }
+}
