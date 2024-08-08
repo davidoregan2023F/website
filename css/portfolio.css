@@ -90,4 +90,8 @@
         gap: 4rem;
         row-gap: 4rem;
     }
+
+    .card:hover .card-content, .card:focus .card-content, .card:active .card-content {
+        transform: none;
+    }
 }
